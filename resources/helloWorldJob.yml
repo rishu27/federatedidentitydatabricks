@@ -1,0 +1,16 @@
+resources:
+  jobs:
+    helloWorldJob:
+      name: "Hello World"
+      tasks:
+        - task_key:hello_world
+          spark_python_task:
+            python_file:../src/hello.py
+          environment_key:Default
+      queue:
+        enabled:true
+      environmenet:
+        - environment_key: Default
+          spec:
+            environment_version: "4"
+      performance_target: PERFORMANCE_OPTIMIZED
