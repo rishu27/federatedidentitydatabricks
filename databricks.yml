@@ -1,8 +1,10 @@
 bundle:
   name: helloworldDAB
+
 include:
   - resources/*.yml
+
 targets:
   dev:
     workspace:
-      host:https://dbc-9ed413ac-d791.cloud.databricks.com
+      host: https://dbc-9ed413ac-d791.cloud.databricks.com
